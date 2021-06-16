@@ -36,9 +36,9 @@ code {
 
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      grid-template-rows: repeat(auto-fit, 260px);
+      grid-template-rows: repeat(auto-fit, 200px);
       grid-auto-flow: dense;
-      grid-gap: 0.3rem;
+      grid-gap: 2rem;
     
 
 
@@ -53,3 +53,22 @@ code {
       margin-bottom: 4%;
 }
 
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+  grid-row: span 1;
+}

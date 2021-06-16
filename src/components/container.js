@@ -5,11 +5,11 @@ export default function Container(props) {
     const { details } = props;
     return (
         <div class={props.class}>
-            <Tile class="one tile" text="1">1</Tile>
-            <Tile class="tile two" text="2">2</Tile>
-            <Tile class="tile three" text="3">3</Tile>
-            <Tile class="tile four" text="4">4</Tile>
-            <Tile class="tile five" text="5">5</Tile>
+            <Tile class="tile" text="1" width={2} height={2}/>
+            <Tile class="tile" text="2" width={1} height={1}/>
+            <Tile class="tile" text="3" width={1} height={1}/>
+            <Tile class="tile" text="4" width={2} height={1}/>
+            <Tile class="tile" text="5" width={1} height={1}/>
         </div>
     );
 }

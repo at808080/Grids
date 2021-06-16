@@ -1,8 +1,11 @@
 import React from "react";
 
 export default function Tile(props) {
-    const { details } = props;
+    const style = {
+        gridColumnEnd: `span ${props.width}`,
+        gridRowEnd: `span ${props.height}`,
+      }
     return (
-        <div class={props.class}>{props.text}</div>
+        <div style={style} class={props.class}>{props.text}</div>
     );
 }
